@@ -1,0 +1,161 @@
+/* *Sirve para hacer los cambios en toda la pagína */
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*NAVBAR*/
+nav ul{
+    list-style: none;
+    background-color: black;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    color:white;
+    text-align: center;
+    padding: 13px;
+    text-decoration: none;
+    display: inline-block;
+}
+nav li a:hover{
+    color:red;
+    background-color: white;
+}
+/*Fin NAVBAR*/
+
+/* HERO */
+.hero{
+    background-image: linear-gradient(rgba(24,42,263,0.8),
+                    rgba(0,0,0.5)),url(https://img.freepik.com/vector-premium/servicio-informatico-reparacion-soporte-tecnico-ilustracion-3d-concepto-vector-isometrico-plano-primeros-auxilios_92926-29.jpg?w=2000);
+    /*Ancho*/width: 100%; 
+    /*Alto*/height: 600px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.text-hero{
+    color:white;
+    text-align: center;
+    padding: 15%;
+}
+/* Fin HERO*/
+
+/*Utilidares*/
+.text-large{
+    font-size: 75px;
+}
+.text-medium{
+    font-size: 25px;
+}
+.contenedor{
+    width: 80%;
+    padding:80px;
+    margin: auto;
+}
+/*Fin Utilidares*/
+
+/*Info*/
+.info{
+    background-color: grey;
+    color:white;
+}
+.titulo-info{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+}
+/*Fin Info*/
+
+/*Servicio*/
+.contenedor-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0,0,0.5);
+    border-radius: 10px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0,6;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(0,0,0.5);
+    transform:scale(1.15);
+}
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.icon-style{
+    color:red;
+    font-size: 30px;
+    margin: 20px;
+}
+.card p{
+    margin: 15px;
+    text-align: justify;
+}
+/*Fin Servicio*/
+
+/*Galeria*/
+.galeria{
+    background-color: gainsboro;
+}
+.contenedor-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.img{
+    width: 280px;
+    height: 210px;
+    box-shadow: 2px 2px 2px rgb(29, 29, 29);
+    margin-bottom: 20px;
+}
+.img:hover{
+    transform:scale(1.13);
+}
+/*Fin Galeria*/
+
+/*Footer*/
+.footer-color{
+    background-color: black;
+    color:white;
+}
+.footer{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+.footer ul{
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+.footer li{
+    padding: 3px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer i{
+    color:yellow ;
+    font-size:15px;
+}
+/*Fin Footer*/
